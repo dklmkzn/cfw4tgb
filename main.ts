@@ -1,5 +1,5 @@
 Deno.serve(async (request) => {
- return new Response("Service Paused", { status: 503 }));
+ return new Response("Service Paused", { status: 503 })
 
   const url = new URL(request.url);
   const match = url.pathname.match(/^\/bot\d+:([^\/]+)/);
